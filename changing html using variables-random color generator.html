@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<title>changing html content using  variables in javascript.....</title>
+<style>
+    .fb{
+        background-color: #e8cc16;
+        height: 100px;
+        width: auto;
+        color: beige;
+    }
+    .apl{
+        background-color: blueviolet;
+        height: 100px;
+        width: auto;
+        color: brown;
+    }
+    .msoft{
+        background-color: burlywood;
+        height: 100px;
+        widows: auto;
+        color: aliceblue;
+    }
+    .grt{
+        background-color: aqua;
+        color: beige;
+    }
+        
+        
+    </style>
+</head>
+<body>
+<div class="fb" id="facebook"><p>Facebook is a <span class="grt">great</span></p></div>
+<div class="apl" id="apple"><p>Apple</p></div>    
+<div class="msoft"><p>Microsoft</p></div>
+    <button id="button1">change facebook content.</button>
+    <button  id="button2">change apple content.</button>
+    <script>
+   var color = 'rgb(15,156,68)';
+        document.getElementById("button1").onclick=function(){
+            document.getElementById("facebook").style.backgroundColor=color;
+        }
+        var x,y,z,applecolor;
+        document.getElementById("button2").onclick=function(){
+            x= Math.round(Math.random()*256);
+            y= Math.round(Math.random()*256);
+            z= Math.round(Math.random()*256);
+            applecolor='rgb('+ x +','+ y +','+ z +')';
+            document.getElementById("apple").style.backgroundColor=applecolor;
+            document.getElementById("apple").innerHTML='<p>' + applecolor + '</p>';
+        }
+    </script>
+</body>
