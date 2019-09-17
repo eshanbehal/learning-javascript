@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+<title>changing html content using javascript.....</title>
+<style>
+    .fb{
+        background-color: #e8cc16;
+        height: 100px;
+        width: auto;
+        color: beige;
+    }
+    .apl{
+        background-color: blueviolet;
+        height: 100px;
+        width: auto;
+        color: brown;
+    }
+    .msoft{
+        background-color: burlywood;
+        height: 100px;
+        widows: auto;
+        color: aliceblue;
+    }
+    .grt{
+        background-color: aqua;
+        color: beige;
+    }
+        
+        
+    </style>
+</head>
+<body>
+<div class="fb" id="facebook"><p>Facebook is a <span class="grt">great</span></p></div>
+<div class="apl" id="apple"><p>Apple</p></div>    
+<div class="msoft"><p>Microsoft</p></div>
+    <button id="button1">change facebook content.</button>
+    <button  id="button2">change apple content.</button>
+    <script>
+    document.getElementById("button1").onclick=function(){
+        document.getElementById("facebook").innerHTML="<p>you just changed fb content.</p>";
+        
+    }
+    document.getElementById("button2").ondblclick=function(){
+        document.getElementById("apple").innerHTML="<ul><li>green apple</li><li>red apple.</li><li>brown apple.</li></ul>";
+    }
+    </script>
+</body>
