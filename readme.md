@@ -1,1 +1,2 @@
 just started off by learning basic script for showing up an alert message as the webpage loads.
+ending today at learning some basics concepts of javascript like variables , functions , and changing contents in html using these.
