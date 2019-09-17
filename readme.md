@@ -1,0 +1,1 @@
+just started off by learning basic script for showing up an alert message as the webpage loads.
