@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<title>swapping html content using functions in javascript.....</title>
+<style>
+    .fb{
+        background-color: #e8cc16;
+        height: 100px;
+        width: auto;
+        color: beige;
+    }
+    .apl{
+        background-color: blueviolet;
+        height: 100px;
+        width: auto;
+        color: brown;
+    }
+    .msoft{
+        background-color: burlywood;
+        height: 100px;
+        widows: auto;
+        color: aliceblue;
+    }
+    .grt{
+        background-color: aqua;
+        color: beige;
+    }
+        
+        
+    </style>
+</head>
+<body>
+<div class="fb" id="facebook"><p>Facebook is a <span class="grt">great</span></p></div>
+<div class="apl" id="apple"><p>Apple</p></div>    
+<div class="msoft" id="microsoft"><p>Microsoft</p></div>
+    <button id="button1" onclick="swap('facebook','apple')">swap facebook and apple content.</button>
+    <button  id="button2" onclick="swap('apple','microsoft')">swap apple and microsoft content.</button>
+    <script>
+   function greeting1(){
+       window.alert("hello! its eshan here.");
+   }
+//        greeting1();
+        
+        function greeting2(firstname){
+            window.alert("hello " + firstname + "!");
+        }
+//        greeting2('Eshan Behal');
+        
+        function sum(a,b){
+            return a+b;
+        }
+        var x = sum(5,5);
+//        window.alert("the sum of a and b is: " + x);
+        function swap(id1,id2){
+            var y = document.getElementById(id1).innerHTML;
+            var z = document.getElementById(id2).innerHTML;
+            document.getElementById(id2).innerHTML=y;
+            document.getElementById(id1).innerHTML=z;
+            
+        }
+        
+    </script>
+</body>
