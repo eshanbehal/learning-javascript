@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>if-switch statments in javascript</title>
+    </head>
+    <body>
+        <p>speed on the motorway:<input id="speed" type="number"/><button onclick="checkSpeed()">check</button></p>
+        <p>season now:<input id="myInput"/><button onclick="checkSeason()">submit</button></p>
+    <script>
+        function checkSpeed(){
+            var speed=document.getElementById("speed").value;
+        if(speed>70){
+            window.alert("you are going too fast.");
+        }else if(speed<40){
+            window.alert("you are going too slow.");
+        }else{
+            window.alert("you are going with fine speed.");
+        }
+        }
+        function checkSeason(){
+            var x=document.getElementById("myInput").value.toLowerCase();
+            switch(x){
+                case "summer":
+                    window.alert("it is summer time.");
+                    break;
+                    case "winter":
+                    window.alert("it is winter time.");
+                    break;
+                    case "spring":
+                    window.alert("it is spring time.");
+                    break;
+                    case "autumn":
+                    window.alert("it is autumn time.");
+                default:
+                    window.alert("i donot recognize this.");
+            }
+        }
+        
+        </script>
+    </body>
+</html>
