@@ -7,10 +7,14 @@
     <body>
     <p id="counter">0</p>
         <button onclick="clearInterval(myCounter)">stop counter</button>
+        <br/>
+        <button onclick="clearTimeout(delayedWelcomeMessage)">avoid delayedWelcomeMessage</button>
         <script>
         var counter = document.getElementById("counter");
             var x = 0;
             var myCounter = setInterval(function(){x++ ;counter.innerHTML= x},1000);
+            var delayedWelcomeMessage = setTimeout(function(){window.alert("welcome to my webpage.")},4000);
+            var refreshPage= setTimeout(function() { location.reload(); }, 2000);
         </script>
     </body>
 </html>
