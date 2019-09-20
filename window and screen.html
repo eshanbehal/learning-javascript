@@ -4,23 +4,43 @@
     <meta charset="utf-8">
     <title>window and screen in javascript</title>
     <style>
+        #div1{
+            background-color: antiquewhite;
+        }
+        #div2{
+            background-color: green;
+        }
     
-    
-    
-    
+    #div3{
+            background-color: rosybrown;
+        }
+    #div4{
+            background-color: greenyellow;
+        }
+        .equalBox{
+            float: left;
+            margin-left: 2px;
+        }
     </style>
     </head>
     <body>
+        <div id="div1" class="equalBox">div1</div>
+        <div id="div2" class="equalBox">div2</div>
+        <div id="div3" class="equalBox">div3</div>
+        <div id="div4" class="equalBox">div4</div>
         <script>
-        var windowHeight = window.innerHeight || document.documentElement.clientHeight|| document.body.clientHeight;
+//        var windowHeight = window.innerHeight || document.documentElement.clientHeight|| document.body.clientHeight;
 //            window.alert(innerHeight);
             
-            var screenWidth = window.screen.width;
+//            var screenWidth = window.screen.width;
 //         window.alert(screenWidth);
             
-            var availScreenHeight= window.screen.availHeight;
-            window.alert(availScreenHeight);
-        
+//            var availScreenHeight= window.screen.availHeight;
+//            window.alert(availScreenHeight);
+            for(i=1; i<5; i++){
+            document.getElementById("div" + i).style.width = window.innerWidth/4-10 + 'px';
+            document.getElementById("div" + i).style.height = window.innerHeight-10 + 'px';
+            }
         </script>
     </body>
 </html>
